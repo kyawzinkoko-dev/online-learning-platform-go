@@ -6,11 +6,11 @@ import (
 
 	"github.com/gin-gonic/gin"
 	"github.com/kyawzinkoko-dev/online-learning-platform/configs"
-	"github.com/kyawzinkoko-dev/online-learning-platform/internal/database"
 	authRouter "github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/auth/route"
 	"github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/auth/service"
 	"github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/handler"
 	"github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/user/repository"
+	"github.com/kyawzinkoko-dev/online-learning-platform/pkg/database"
 )
 
 type Application struct {
