@@ -45,3 +45,7 @@ migrate-up: ## Run all pending database migrations (.up.sql files)
 migrate-down: ## Rollback the absolute last migration step (.down.sql file)
 	@echo "Rolling back the last migration..."
 	@migrate -path internal/database/migrations -database "$(DB_URL)" down 1
+
+dev: ## Start active hot-reloading code server via Air
+	@echo "Starting application with live-reload..."
+	@air
