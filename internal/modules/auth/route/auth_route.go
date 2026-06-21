@@ -9,10 +9,7 @@ func AuthRoute(rg *gin.RouterGroup, authHandler *handler.AuthHandler) {
 	authGroup := rg.Group("/auth")
 	{
 		authGroup.POST("/register", authHandler.Register)
-		authGroup.GET("/ping", func(c *gin.Context) {
-			c.JSON(200, gin.H{"message": "pong"})
-		})
-		//authGroup.POST("/login", authHandler.Login)
+		authGroup.POST("/login", authHandler.Login)
 	}
 
 }
