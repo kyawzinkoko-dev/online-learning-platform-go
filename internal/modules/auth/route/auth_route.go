@@ -2,7 +2,7 @@ package route
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/handler"
+	"github.com/kyawzinkoko-dev/online-learning-platform/internal/modules/auth/handler"
 )
 
 func AuthRoute(rg *gin.RouterGroup, authHandler *handler.AuthHandler) {
